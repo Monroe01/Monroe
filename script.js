@@ -2,11 +2,11 @@
 
 // 在页面加载时，默认加载 'home' 页面
 window.onload = function() {
-    loadContent('/home.html');
+    loadContent('home'); 
 };
 
 function loadContent(page) {
-    const pageUrl = `${page}.html`;
+    const pageUrl = `${page}.html`; // 构建相对路径，如 'home.html'
     fetch(pageUrl)
         .then(response => {
             if (!response.ok) throw new Error(`Could not load ${pageUrl}`);
