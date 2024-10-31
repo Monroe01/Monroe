@@ -1,70 +1,54 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menglu</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <h1>Menglu</h1>
         <nav>
             <ul class="header-nav">
-                <li><a href="#about">About me</menu></menu></a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#contact">Social media</a></li>
+                <li><a href="#" onclick="loadContent('about')">About me</a></li>
+                <li><a href="#" onclick="loadContent('publications')">publications</a></li>
+                <li><a href="#" onclick="loadContent('social_media')">Social media</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- left bar -->
+    <!-- Left Sidebar -->
     <div class="sidebar">
         <img src="profile.jpg" alt="myPicture" class="profile-image">
         <h2>Menglu Liu</h2>
         <p class="pronouns">she/her/hers</p>
         <p class="bio">
-            Hello! Welcome to my website. 
-            I'm Menglu, an undergraduate student majoring in Computer Science at Syracuse University.
+            Hello! Welcome to my website. I'm Menglu, an undergraduate student majoring in Computer Science at Syracuse University.
         </p>
         
         <ul class="contact-info">
             <li><span class="icon">📍</span> Syracuse, NY</li>
             <li><span class="icon">🏫</span> Syracuse University</li>
             <li><span class="icon">✉️</span> <a href="mailto:mliu40@syr.edu">Email</a></li>
-            <li><span class="icon">🔗</span> <a href=",,,">LinkedIn</a></li>
+            <li><span class="icon">🔗</span> <a href="#">LinkedIn</a></li>
         </ul>
     </div>
 
-    <!-- right content -->
-    <div class="content">
-        <!-- About part -->
+    <!-- Right Content Area -->
+    <div class="content" id="main-content">
+        <!-- Default About Me content -->
         <section id="about">
-            <h2>About me</menu></h2>
+            <h2>About me</h2>
             <p>
                 Hello! I’m Menglu Liu, an undergraduate student at Syracuse University, majoring in Computer Science. 
                 My academic journey started in economics, but my passion for technology and data led me to switch to Computer Science, 
-                where I’ve found a genuine interest in coding, data analytics, and artificial intelligence. Throughout my studies, 
-                I’ve had the opportunity to intern in data analysis, work on projects like OrangeNest, a housing platform for Syracuse students, 
-                and gain hands-on experience with various programming languages and tools.
+                where I’ve found a genuine interest in coding, data analytics, and artificial intelligence.
             </p>
-        </section>
-
-        <!-- Awards part -->
-        <section id="awards">
-            <h2>Award</h2>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-            </ul>
-        </section>
-
-        <!-- Contact part -->
-        <section id="contact">
-            <h2>Scial Media</h2>
-            <p>ins:</p>
-            <p>github:</p>
         </section>
     </div>
 </body>
