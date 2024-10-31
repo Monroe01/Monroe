@@ -1,3 +1,10 @@
+// script.js
+
+// 在页面加载时，默认加载 'home' 页面
+window.onload = function() {
+    loadContent('home');
+};
+
 function loadContent(page) {
     const pageUrl = `${page}.html`;
     fetch(pageUrl)

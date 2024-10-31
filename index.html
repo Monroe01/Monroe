@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menglu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="content.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <h1>Menglu</h1>
+        <h1><a href="#" onclick="loadContent('home')">Menglu</a></h1>
         <nav>
             <ul class="header-nav">
                 <li><a href="#" onclick="loadContent('about')">About me</a></li>
@@ -35,21 +36,17 @@
             <li><span class="icon">📍</span> Syracuse, NY</li>
             <li><span class="icon">🏫</span> Syracuse University</li>
             <li><span class="icon">✉️</span> <a href="mailto:mliu40@syr.edu">Email</a></li>
-            <li><span class="icon">🔗</span> <a href="#">LinkedIn</a></li>
+            <li><span class="icon">🔗</span> <a href="https://www.linkedin.com/in/menglu-liu/">LinkedIn</a></li>
         </ul>
     </div>
 
+
     <!-- Right Content Area -->
     <div class="content" id="main-content">
-        <!-- Default About Me content -->
-        <section id="about">
-            <h2>About me</h2>
-            <p>
-                Hello! I’m Menglu Liu, an undergraduate student at Syracuse University, majoring in Computer Science. 
-                My academic journey started in economics, but my passion for technology and data led me to switch to Computer Science, 
-                where I’ve found a genuine interest in coding, data analytics, and artificial intelligence.
-            </p>
-        </section>
+        <!-- 初始状态为空，页面加载时通过 JavaScript 加载 home.html 的内容 -->
     </div>
+
+
+    
 </body>
 </html>
