@@ -17,3 +17,4 @@ function loadContent(page) {
         })
         .catch(error => console.error('Error loading page:', error));
 }
+
