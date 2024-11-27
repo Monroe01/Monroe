@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menglu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1><a href="#" onclick="loadContent('home')">Menglu</a></h1>
+        <nav>
+            <ul class="header-nav">
+                <li><a href="#" onclick="loadContent('home')">Home</a></li>
+                <li><a href="#" onclick="loadContent('Extra-Curriculum')">Extra-Curriculum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+        <img src="profile.jpg" alt="myPicture" class="profile-image">
+        <h2>Menglu Liu</h2>
+        <p class="pronouns">she/her/hers</p>
+        <p class="bio">
+            Hello! Welcome to my website. I'm Menglu, an undergraduate 
+            student majoring in Computer Science at Syracuse University.
+        </p>
+        
+        <ul class="contact-info">
+            <li><span class="icon">📍</span> Syracuse, NY</li>
+            <li><span class="icon">🏫</span> Syracuse University</li>
+            <li><span class="icon">✉️</span> <a href="mailto:mliu40@syr.edu">Email</a></li>
+            <li><span class="icon">🔗</span> <a href="https://www.linkedin.com/in/menglu-liu/">LinkedIn</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Right Content Area -->
+    <div class="content" id="main-content">
+        <!-- 初始状态为空，页面加载时通过 JavaScript 加载 home.html 的内容 -->
+    </div>
+    
+</body>
+
+
+</html>
